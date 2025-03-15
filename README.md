@@ -1,28 +1,31 @@
-# Siberian Research Institute of Automation and Control 🌐  
+# 🎨 Siberian Research Institute - Web Template  
 
 ![Project Logo](path/to/logo.png)  
-*Replace "path/to/logo.png" with the actual path to your logo.*  
+*Replace "path/to/logo.png" with your actual logo path.*  
 
 ## 🚀 Project Overview  
-This project is a modern, responsive website for the **Siberian Research Institute of Automation and Control (Сибирский НИИ Автоматизации и Управления)**. The website provides key information about the institute, research projects, and automation technologies.  
+This repository contains a **custom-designed web template** for the **Siberian Research Institute of Automation and Control (Сибирский НИИ Автоматизации и Управления)**.  
+
+The template is crafted with modern technologies to ensure **responsiveness, interactivity, and clean UI/UX**.  
 
 ## 🛠️ Technologies Used  
-- **Frontend:** HTML, CSS, SASS  
-- **JavaScript Frameworks:** JavaScript, jQuery  
-- **CMS:** WordPress  
+- **HTML5** – Structuring the content  
+- **CSS3 & SASS** – Custom styling with maintainable SCSS  
+- **JavaScript & jQuery** – Dynamic interactions and animations  
 
 ## 🎯 Features  
-✅ Fully responsive design  
-✅ Interactive UI with JavaScript & jQuery  
-✅ WordPress-powered CMS for easy content management  
-✅ Optimized for speed and accessibility  
+✅ Fully responsive and mobile-friendly 📱  
+✅ Clean and modern UI 🎨  
+✅ Optimized CSS and JS for better performance 🚀  
+✅ Reusable components for easy integration 🔄  
 
 ## 📂 Project Structure  
-/project-root
-│── /assets # CSS, JS, images
-│── /templates # HTML templates
-│── /wp-content # WordPress theme files
-│── index.html # Main entry point
-│── style.scss # SASS styles
-│── script.js # Main JavaScript file
-│── README.md # Project documentation
+/project-root  
+│── /assets  
+│   ├── /css         # Compiled CSS files  
+│   ├── /js          # JavaScript files  
+│   ├── /libs        # External libraries (e.g., jQuery, Bootstrap)  
+│   ├── /scss        # SASS source files  
+│── /templates       # Additional pages (e.g., about, contact, services)  
+│── index.html       # Main entry file  
+│── README.md        # Project documentation  
