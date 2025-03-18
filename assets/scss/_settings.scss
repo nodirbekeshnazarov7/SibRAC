@@ -167,15 +167,61 @@ html {
 		width: 3px;
 	}
 }
+
+
+$white: #fff;
+$black: #000;
+$blue: #06F;
+$dark_blue: #039;
+$gradient: linear-gradient(180deg, #039 -24.92%, #06F 100%);
+$light_blue: #EBF1FE;
+$dark_grey: #444;
+$grey: #DDD;
+$light_grey: #E9E9E9;
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 body {
-	font-family: "TT Travels";
-	background: #e5e5e5;
+	font-family: "Inter";
+	background: #fff;
+}
+ul{
+	list-style: none;
 }
 .wrapper {
 	overflow: hidden;
+}
+.hero{
+	background: $gradient;
+	background: #004AC7;
+	padding: 24px 0 64px;
+	@media (max-width: 576px){
+		padding: 16px 0 48px;
+	}
+}
+.container{
+	max-width: 1280px;
+	width: 100%;
+}
+.btn{
+	background-color: $blue;
+	padding: 10px 20px;
+	font-family: "Inter";
+	font-weight: 400;
+	font-size: 18px;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.36px;
+	color: $white;
+	transition: all .3s ease-in-out;
+}
+.btn:hover{
+	background-color: $dark_blue;
+	color: $white;
+}
+.swiper_btn{
+	cursor: pointer;
 }

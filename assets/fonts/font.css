@@ -1,0 +1,55 @@
+/* 'Inter' */
+@font-face{
+    font-family: "Inter";
+    src: url(/assets/fonts/Inter/Inter_18pt-Regular.ttf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Inter";
+    src: url(/assets/fonts/Inter/Inter_18pt-Medium.ttf);
+    font-weight: 500;
+}
+@font-face{
+    font-family: "Inter";
+    src: url(/assets/fonts/Inter/Inter_18pt-SemiBold.ttf);
+    font-weight: 600;
+}
+
+/* 'PP Neue Montreal' */
+@font-face{
+    font-family: "Montreal";
+    src: url(/assets/fonts/Montreal/ppneuemontreal-thin.otf);
+    font-weight: 100;
+}
+@font-face{
+    font-family: "Montreal";
+    src: url(/assets/fonts/Montreal/ppneuemontreal-italic.otf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Montreal";
+    src: url(/assets/fonts/Montreal/ppneuemontreal-book.otf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Montreal";
+    src: url(/assets/fonts/Montreal/ppneuemontreal-medium.otf);
+    font-weight: 500;
+}
+@font-face{
+    font-family: "Montreal";
+    src: url(/assets/fonts/Montreal/ppneuemontreal-semibolditalic.otf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: "Montreal";
+    src: url(/assets/fonts/Montreal/ppneuemontreal-bold.otf);
+    font-weight: 700;
+}
+
+/* Roboto */
+@font-face{
+    font-family: "Roboto";
+    src: url(/assets/fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+}

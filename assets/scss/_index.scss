@@ -1,12 +1,604 @@
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #cccccc;
-    margin: 1em 0;
-    padding: 0;
-    
-    @media #{$laptop}{
-        background-color: red;
+.rock_section {
+  margin-top: 66px;
+  margin-bottom: 102px;
+  .rockSwiper{
+    margin: 0 68px;
+  }
+  
+  .swiper-slide{
+    box-sizing: border-box;
+    width: auto;
+    a{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: $white;
+      text-wrap: nowrap;
+      font-family: "Inter";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.32px;
+      transition: all .3s ease;
+      img{
+        opacity: .6;
+      }
+      &:hover{
+        color: $light_grey;
+      }
     }
   }
+  .rock_left{
+    left: 0;
+  }
+  .rock_right{
+    right: 0;
+  }
+}
+
+.specialties_section{
+  .specialties{
+    display: grid;
+    gap: 9px;
+    grid-template-columns: repeat(24, 1fr); /* 24 ta teng ustun */
+    grid-template-rows: 3;
+  }
+  .specialty{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: end;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 4px 4px 14.5px 0px rgba(0, 0, 0, 0.20);
+    transition: all .3s ease;
+    &:hover{
+      background-color: $white;
+      .specialty_title{
+        color: $black;
+      }
+      .specialty_arrow{
+        display: block;
+      }
+      .specialty_img_block{
+        display: block;
+      }
+    }
+    .specialty_title{
+      max-width: 230px;
+      width: 100%;
+      color: $white;
+      font-family: "Inter";
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.44px;
+      transition: all .3s ease;
+    }
+    .specialty_arrow{
+      display: none;
+      background-color: #004AC7;
+      padding: 0 0 9px 9px;
+      border-bottom-left-radius: 50%;
+      border-top-right-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 0;
+      transition: all .3s ease;
+      &::before{
+        content: "";
+        width: 10px;
+        height: 8px;
+        position: absolute;
+        top: 0px;
+        left: -10px;
+        background-color: transparent;
+        border-top-right-radius: 75%;
+        box-shadow: 2px -2px 0 0px #004AC7;
+      }
+      &::after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        background-color: transparent;
+        bottom: -10px;
+        right: 0px;
+        border-top-right-radius: 75%;
+        box-shadow: 2px -3px 0 0px #004AC7;
+      }
+    }
+    .specialty_img_block{
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 80px;
+    }
+    .specialty_img{
+      position: relative;
+    }
+    .specialty_img1{
+      position: absolute;
+      bottom: 0;
+      transition: all .3s ease;
+      z-index: -1;
+    }
+    .specialty_img2{
+      transition: all .3s ease;
+      z-index: 12;
+    }
+  }
+}
+
+.development_areas{
+  padding: 140px 0;
+  h2{
+    color: $black;
+    text-align: center;
+    
+    /* semibold/44 */
+    font-family: "Inter";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.88px;
+    margin-bottom: 40px;
+  }
+  .card_wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 2;
+    gap: 16px;
+  }
+  .development_card{
+    border-radius: 20px;
+    background-color: $light_blue;
+    padding: 24px;
+    .card_header{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .left_icon{
+      padding: 20px;
+      background-color: $white;
+      img{
+        opacity: .4;
+      }
+    }
+    .right_icon{
+      position: relative;
+      svg{
+        position: absolute;
+      }
+    }
+    h3{
+      color: $black;
+      font-family: "Inter";
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.52px;
+    }
+    p{
+      color: $black;
+      font-family: "Inter";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.36px;
+      opacity: .6;
+    }
+  }
+
+}
+
+.research_work{
+  background-color: #F5F5F5;
+  padding: 64px 0;
+  h2{
+    color: $black;
+    text-align: center;
+    
+    /* semibold/44 */
+    font-family: "Inter";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.88px;
+    margin-bottom: 40px;
+  }
+  .work_main{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+  }
+  .scroll_card{
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 4px 4px 14.5px 0px rgba(0, 0, 0, 0.20);
+    padding: 40px 54px 10px 32px;
+    position: relative;
+    overflow: hidden;
+    .scroll_img{
+      position: absolute;
+      top: 17px;
+      right: 0px;
+    }
+  }
+  .scroll_card_title{
+    color: $black;
+    font-family: "Inter";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.52px;
+    margin-bottom: 40px;
+  }
+  .scroll_card_body{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 530px;
+    overflow-y: auto;
+    position: relative;
+    &::-webkit-scrollbar {
+      display: none;
+      position: absolute;
+      background-color: #E0E0E0;
+      width: 3px;
+      left: 20px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      display: none;
+      background-color: #000;
+      width: 3px;
+    }
+  }
+  .scroll_card_blur{
+    height: 55px;
+    width: 100%;
+    background: #FFF;
+    filter: blur(35.25px);
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    z-index: 1;
+
+  }
+  .work_left{
+    position: relative;
+  }
+  .custom_scrollbar {
+    position: absolute;
+    left: -24px; 
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #E0E0E0;
+    .scroll_thumb {
+      position: absolute;
+      width: 100%;
+      background: #000;
+      cursor: pointer;
+  }
+}
+  .scroll_card_item{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #B4B4B4;
+    span{
+      color: $black;
+      opacity: .6;
+      font-family: "Inter";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.32px;
+      padding: 6px 10px;
+      border-radius: 66px;
+      border: 1px solid #000;
+      display: inline-block;
+      width: auto;
+    }
+    h3{
+      color: $black;
+      font-family: "Inter";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.48px;
+    }
+    p{
+      max-width: 456px;
+      width: 100%;
+      color: $black;
+      font-family: "Inter";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.32px;
+      opacity: .6;
+    }
+  }
+  .work_right_items{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-left: 60px;
+  }
+  .work_right_item{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    .work_right_icon{
+      padding: 10px;
+      border-radius: 10px;
+      background-color: $blue;
+    }
+    h3{
+      color: $black;
+      font-family: "Inter";
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      span{
+        font-size: 22px;
+        font-weight: 500;
+      }
+    }
+    p{
+      color: $black;
+      opacity: .6;
+      font-family: "Inter";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.36px;
+    }
+  }
+}
+
+.partners_integrations{
+  background-color: $white;
+  padding: 140px 0;
+  h2{
+    color: $black;
+    text-align: center;
+    
+    /* semibold/44 */
+    font-family: "Inter";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.88px;
+    margin-bottom: 40px;
+  }
+  .swiper_part{
+    position: relative;
+    padding: 0 48px;
+  }
+  .swiper-slide{
+      border-radius: 20px;
+      background-color: $light_blue;
+      padding: 24px;
+      img{
+        margin-bottom: 32px;
+      }
+      h3{
+        color: $black;
+        font-family: "Inter";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.48px;
+        margin-bottom: 24px;
+      }
+      a{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        color: $blue;
+        font-family: "Inter";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+        transition: all .3s ease;
+        img{
+          margin: 0;
+        }
+        svg{
+          margin: 0;
+          transition: all .3s ease;
+        }
+        &:hover{
+          color: $dark_blue;
+          path{
+            fill: $dark_blue;
+          }
+        }
+      }
+  }
+  .partnersSwiperPrev{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .partnersSwiperNext{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.more_information{
+  background-color: $white;
+  padding:0 0 140px;
+  h2{
+    color: $black;
+    text-align: center;
+
+    font-family: "Inter";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.88px;
+    margin-bottom: 40px;
+  }
+  .information_cards{
+    display: flex;
+    gap: 16px;
+  }
+  .information_card{
+    position: relative;
+    background-color: $light_blue;
+    border-radius: 20px;
+    padding: 24px;
+    height: 430px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+
+
+    &:hover{
+      .hover_border{
+        visibility: visible;
+      }
+    }
+
+    .hover_border{
+      position: absolute;
+      width: 142px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      visibility: hidden;
+      transition: all .1
+      s ease-in;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 14px;
+        background-color: #69A5FF;
+        border-radius: 50%;
+        filter: blur(5.35px);
+        opacity: 0.9;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 15px;
+        width: 111px;
+        height: 4px;
+        background-color: #3586FF;
+      }
+    }
+    .little_question{
+      position: absolute;
+      top: 14px;
+      right: 0;
+    }
+    .big_question{
+      position: absolute;
+      top: 82px;
+      right: 0;
+    }
+
+    h3{
+      color: $black;
+      font-family: "Inter";
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: -0.52px;
+      margin-bottom: 16px;
+    }
+    p{
+      color: $black;
+      opacity: .6;
+      font-family: "Inter";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.36px;
+      margin-bottom: 32px;
+    }
+    button{
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: $blue;
+      transition: all .3s ease;
+      outline: none;
+      border: none;
+
+      color: $white;
+      font-family: "Inter";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.36px;
+
+      &:hover{
+        background-color: $dark_blue;
+      }
+    }
+    a{
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: $blue;
+      transition: all .3s ease;
+      outline: none;
+      border: none;
+
+      color: $white;
+      font-family: "Inter";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.36px;
+
+      &:hover{
+        background-color: $dark_blue;
+      }
+    }
+  }
+}

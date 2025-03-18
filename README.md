@@ -1,6 +1,6 @@
 # 🎨 Siberian Research Institute - Web Template  
 
-![Project Logo](path/to/logo.png)  
+![Project Logo](./assets/img/logo.svg)  
 *Replace "path/to/logo.png" with your actual logo path.*  
 
 ## 🚀 Project Overview  
