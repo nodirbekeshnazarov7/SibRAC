@@ -1,0 +1,345 @@
+.hospital_industry{
+    padding:104px 0 64px;
+    h2{
+        color: $white;
+        font-family: "Inter";
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.88px;
+        margin-bottom: 32px;
+    }
+    .skalas{
+        display: flex;
+        gap: 8px;
+        margin-bottom: 72px;
+    }
+    .skala{
+        padding: 10px 12px;
+        border-radius: 10px;
+        background-color: $white;
+        position: relative;
+
+        color: $black;
+        font-family: "Inter";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.32px;
+
+        transition: all .3s ease-in-out;
+        &:hover{
+            background-color: $light_grey;
+            // bottom: 2px;
+        }
+    }
+    .steps{
+        display: grid;
+        grid-template-columns: calc(50% - 55px) calc(50% - 55px);
+        gap: 24px 110px;
+        flex-wrap: wrap;
+    }
+    .step{
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+
+        .step_counter{
+            border-radius: 66px;
+            border: 1px solid $white;
+            opacity: 0.6;
+            padding: 6px 10px;
+
+            color: $white;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.32px;
+        }
+        p{
+            color: $white;
+            font-family: "Inter";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.36px;
+        }
+    }
+}
+
+.products{
+    padding: 140px 0;
+    h2{
+      color: $black;
+      text-align: center;
+      
+      /* semibold/44 */
+      font-family: "Inter";
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: -0.88px;
+      margin-bottom: 40px;
+    }
+    .card_wrapper{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .development_card{
+      width: calc(33.33% - 11.33px);
+      border-radius: 20px;
+      background-color: $light_blue;
+      padding: 24px;
+      .card_header{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 32px;
+      }
+      .left_icon{
+        padding: 20px;
+        background-color: $white;
+        border-radius: 10px;
+        img{
+          opacity: .4;
+        }
+      }
+      .right_icon{
+        position: relative;
+        h3{
+            color: $black;
+            font-family: "Inter";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.48px;
+        }
+      }
+      p{
+        color: $black;
+        font-family: "Inter";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+        opacity: .6;
+        margin-bottom: 48px;
+      }
+      a{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        color: $blue;
+        font-family: "Inter";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.36px;
+        transition: all .3s ease;
+        img{
+          margin: 0;
+        }
+        svg{
+          margin: 0;
+          transition: all .3s ease;
+        }
+        &:hover{
+          color: $dark_blue;
+          path{
+            fill: $dark_blue;
+          }
+        }
+      }
+    }
+  
+}
+
+.question_form{
+    background-color: #F5F5F5;
+    padding: 64px 0;
+    margin-bottom: 140px;
+    h2{
+        color: $black;
+        font-family: "Inter";
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.88px;
+        margin-bottom: 32px;
+    }
+    p{
+        color: $black;
+        font-family: "Inter";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.44px;
+        opacity: .6;
+    }
+    .main_block{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main_img{
+        margin-top: 38px;
+        margin-left: -52px;
+    }
+    .main_left{
+        max-width: 480px;
+        width: 100%;
+    }
+    form{
+        width: 637px;
+        padding: 32px;
+        border-radius: 20px;
+        background: #FFF;
+        
+        /* тень для карточек */
+        box-shadow: 4px 4px 14.5px 0px rgba(0, 0, 0, 0.20);
+        .field_part{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .form_flex{
+            display: flex;
+            gap: 8px;
+            box-sizing: border-box;
+            .form_group{
+                width: calc(50% - 4px);
+            }
+        }
+        .form_group{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+        }
+        label{
+            color: $black;
+            font-family: "Inter";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.36px;
+        }
+        input{
+            border-radius: 10px;
+            border: 1px solid #CACACA;
+            outline: none;
+            background-color: $white;
+            padding: 16px;
+
+            color: $black;
+            font-family: "Inter";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.44px;
+            transition: all .3s ease-in-out;
+
+            &::placeholder{
+                color: $black;
+                font-family: "Inter";
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.44px;
+
+                opacity: .3;
+            }
+
+            &:focus{
+                border: 1px solid $dark_grey;
+            }
+        }
+        textarea{
+            height: 113px;
+            resize: unset;
+            border-radius: 10px;
+            border: 1px solid #CACACA;
+            outline: none;
+            background-color: $white;
+            padding: 16px;
+
+            color: $black;
+            font-family: "Inter";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.44px;
+            transition: all .3s ease-in-out;
+
+            &::placeholder{
+                color: $black;
+                font-family: "Inter";
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.44px;
+
+                opacity: .3;
+            }
+        }
+        button{
+            padding: 16px 20px;
+            background-color: $blue;
+            width: 100%;
+            border-radius: 10px;
+            margin: 28px 0;
+            color: $white;
+            font-family: "Inter";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.36px;
+
+            transition: all .3s ease-in-out;
+
+            &:hover{
+                background-color: $dark_blue;
+            }
+        }
+        .form_footer{
+            padding: 0 14px;
+            color: $black;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.32px;
+            text-align: center;
+            span{
+                display: inline;
+                opacity: .4;
+            }
+            a{
+                color: $black;
+                white-space: wrap; 
+                display: inline;
+                border-bottom: 1px solid $black;
+            }
+        }
+    }
+}

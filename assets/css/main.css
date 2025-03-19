@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body,
 div,
@@ -976,4 +977,332 @@ ul {
 }
 .more_information .information_card a:hover {
   background-color: #039;
+}
+
+.hospital_industry {
+  padding: 104px 0 64px;
+}
+.hospital_industry h2 {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.88px;
+  margin-bottom: 32px;
+}
+.hospital_industry .skalas {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 72px;
+}
+.hospital_industry .skala {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  color: #000;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  transition: all 0.3s ease-in-out;
+}
+.hospital_industry .skala:hover {
+  background-color: #E9E9E9;
+}
+.hospital_industry .steps {
+  display: grid;
+  grid-template-columns: calc(50% - 55px) calc(50% - 55px);
+  gap: 24px 110px;
+  flex-wrap: wrap;
+}
+.hospital_industry .step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.hospital_industry .step .step_counter {
+  border-radius: 66px;
+  border: 1px solid #fff;
+  opacity: 0.6;
+  padding: 6px 10px;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.hospital_industry .step p {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.products {
+  padding: 140px 0;
+}
+.products h2 {
+  color: #000;
+  text-align: center;
+  /* semibold/44 */
+  font-family: "Inter";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.88px;
+  margin-bottom: 40px;
+}
+.products .card_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.products .development_card {
+  width: calc(33.33% - 11.33px);
+  border-radius: 20px;
+  background-color: #EBF1FE;
+  padding: 24px;
+}
+.products .development_card .card_header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.products .development_card .left_icon {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.products .development_card .left_icon img {
+  opacity: 0.4;
+}
+.products .development_card .right_icon {
+  position: relative;
+}
+.products .development_card .right_icon h3 {
+  color: #000;
+  font-family: "Inter";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.products .development_card p {
+  color: #000;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  opacity: 0.6;
+  margin-bottom: 48px;
+}
+.products .development_card a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #06F;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  transition: all 0.3s ease;
+}
+.products .development_card a img {
+  margin: 0;
+}
+.products .development_card a svg {
+  margin: 0;
+  transition: all 0.3s ease;
+}
+.products .development_card a:hover {
+  color: #039;
+}
+.products .development_card a:hover path {
+  fill: #039;
+}
+
+.question_form {
+  background-color: #F5F5F5;
+  padding: 64px 0;
+  margin-bottom: 140px;
+}
+.question_form h2 {
+  color: #000;
+  font-family: "Inter";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.88px;
+  margin-bottom: 32px;
+}
+.question_form p {
+  color: #000;
+  font-family: "Inter";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.44px;
+  opacity: 0.6;
+}
+.question_form .main_block {
+  display: flex;
+  justify-content: space-between;
+}
+.question_form .main_img {
+  margin-top: 38px;
+  margin-left: -52px;
+}
+.question_form .main_left {
+  max-width: 480px;
+  width: 100%;
+}
+.question_form form {
+  width: 637px;
+  padding: 32px;
+  border-radius: 20px;
+  background: #FFF;
+  /* тень для карточек */
+  box-shadow: 4px 4px 14.5px 0px rgba(0, 0, 0, 0.2);
+}
+.question_form form .field_part {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.question_form form .form_flex {
+  display: flex;
+  gap: 8px;
+  box-sizing: border-box;
+}
+.question_form form .form_flex .form_group {
+  width: calc(50% - 4px);
+}
+.question_form form .form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.question_form form label {
+  color: #000;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+.question_form form input {
+  border-radius: 10px;
+  border: 1px solid #CACACA;
+  outline: none;
+  background-color: #fff;
+  padding: 16px;
+  color: #000;
+  font-family: "Inter";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.44px;
+  transition: all 0.3s ease-in-out;
+}
+.question_form form input::placeholder {
+  color: #000;
+  font-family: "Inter";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.44px;
+  opacity: 0.3;
+}
+.question_form form input:focus {
+  border: 1px solid #444;
+}
+.question_form form textarea {
+  height: 113px;
+  resize: unset;
+  border-radius: 10px;
+  border: 1px solid #CACACA;
+  outline: none;
+  background-color: #fff;
+  padding: 16px;
+  color: #000;
+  font-family: "Inter";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.44px;
+  transition: all 0.3s ease-in-out;
+}
+.question_form form textarea::placeholder {
+  color: #000;
+  font-family: "Inter";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.44px;
+  opacity: 0.3;
+}
+.question_form form button {
+  padding: 16px 20px;
+  background-color: #06F;
+  width: 100%;
+  border-radius: 10px;
+  margin: 28px 0;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  transition: all 0.3s ease-in-out;
+}
+.question_form form button:hover {
+  background-color: #039;
+}
+.question_form form .form_footer {
+  padding: 0 14px;
+  color: #000;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  text-align: center;
+}
+.question_form form .form_footer span {
+  display: inline;
+  opacity: 0.4;
+}
+.question_form form .form_footer a {
+  color: #000;
+  white-space: wrap;
+  display: inline;
+  border-bottom: 1px solid #000;
 }/*# sourceMappingURL=main.css.map */
