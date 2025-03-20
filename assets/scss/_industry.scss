@@ -299,6 +299,9 @@
 
                 opacity: .3;
             }
+            &:focus{
+                border: 1px solid $dark_grey;
+            }
         }
         button{
             padding: 16px 20px;

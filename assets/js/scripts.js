@@ -2,30 +2,56 @@ $(document).ready(function(){
     // Swiper part
     var rockSwiper = new Swiper(".rockSwiper", {
         slidesPerView: "auto",
-        spaceBetween: 48,
+        spaceBetween: 30,
         navigation: {
           nextEl: ".rock_right",
           prevEl: ".rock_left",
         },
+        breakpoints: {
+            1200: {
+                slidesPerView: "auto",
+                spaceBetween: 48,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 48,
+            },
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            }
+        }
       });
     var partnersSwiper = new Swiper(".partnersSwiper", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 13,
         navigation: {
           nextEl: ".partnersSwiperNext",
           prevEl: ".partnersSwiperPrev",
         },
+        breakpoints: {
+            768: {
+                slidesPerView: 2
+            },
+            992: {
+                slidesPerView: 3
+            }
+        }
       });
     
     // hamburger
     $(".hamurger_menu").on('click',function(e){
         e.preventDefault();
         $(".header_menus").addClass("active")
+        $("body").addClass("modal_open")
+        $(".modal_overlay").addClass("active")
     })
     
     $(".close").on('click',function(e){
         e.preventDefault();
         $(".header_menus").removeClass("active")
+        $("body").removeClass("modal_open")
+        $(".modal_overlay").removeClass("active")
     })
 
 
@@ -78,4 +104,19 @@ $(document).ready(function(){
         updateThumb();
     });
     observer.observe($scrollBody[0], { childList: true, subtree: true });
+
+
+    // Partners integrations card show more
+    $(".partners_card:nth-child(n+4)").hide();
+
+    $(".show_more").click(function () {
+        $(".partners_card:hidden").each(function (index) {
+            $(this).delay(index * 200).fadeIn(400).css({
+                opacity: 1,
+                transform: "translateY(0)"
+            });
+        });
+
+        $(this).fadeOut(); // Tugmani yashirish
+    });
 });

@@ -178,6 +178,7 @@ $light_blue: #EBF1FE;
 $dark_grey: #444;
 $grey: #DDD;
 $light_grey: #E9E9E9;
+$hero_bg: #004AC7;
 
 * {
 	margin: 0;
@@ -187,6 +188,25 @@ $light_grey: #E9E9E9;
 body {
 	font-family: "Inter";
 	background: #fff;
+	&.modal_open{
+		overflow: hidden;
+	}
+}
+.modal_overlay{
+	position: fixed;
+	z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(7, 7, 7, 0.40);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+	&.active{
+		opacity: 1;
+		pointer-events: auto;
+	}
 }
 ul{
 	list-style: none;
@@ -196,7 +216,7 @@ ul{
 }
 .hero{
 	background: $gradient;
-	background: #004AC7;
+	background: $hero_bg;
 	padding: 24px 0 64px;
 	@media (max-width: 576px){
 		padding: 16px 0 48px;

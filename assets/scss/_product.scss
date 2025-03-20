@@ -32,6 +32,8 @@
 
     .specialties{
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 8px;
       }
       .specialty{
@@ -72,7 +74,7 @@
         }
         .specialty_arrow{
           display: none;
-          background-color: #004AC7;
+          background-color: $hero_bg;
           padding: 0 0 9px 9px;
           border-bottom-left-radius: 50%;
           border-top-right-radius: 50%;
@@ -90,7 +92,7 @@
             left: -10px;
             background-color: transparent;
             border-top-right-radius: 75%;
-            box-shadow: 2px -2px 0 0px #004AC7;
+            box-shadow: 2px -2px 0 0px $hero_bg;
           }
           &::after{
             content: "";
@@ -101,7 +103,7 @@
             bottom: -10px;
             right: 0px;
             border-top-right-radius: 75%;
-            box-shadow: 2px -3px 0 0px #004AC7;
+            box-shadow: 2px -3px 0 0px $hero_bg;
           }
         }
         .specialty_img_block{

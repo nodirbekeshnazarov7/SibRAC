@@ -1,37 +1,791 @@
-@media (max-width:1920px){
-    .container{
-        max-width: 1620px;
+@media (max-width:1920px) {
+    .container {
+        max-width: 1280px;
         margin: 0 auto;
         padding: 0;
     }
 }
-@media (max-width:1600px){
-    .container{
-        max-width: 1320px;
+
+@media (max-width:1600px) {
+    .container {
+        max-width: 1280px;
     }
 }
-@media (max-width:1400px){
-    .container{
+
+@media (max-width:1400px) {
+    .container {
         max-width: 1140px;
     }
 }
-@media (max-width:1200px){
-    .container{
+
+@media (max-width:1200px) {
+    .container {
         max-width: 960px;
     }
+
+    /* Header */
+    .header {
+        .header_block {
+            padding: 16px 40px;
+        }
+
+        .header_menus {
+            gap: 24px;
+
+            li {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .header_right {
+            gap: 12px;
+
+        }
+    }
+
+    /* ========= Main page ======== */
+    .rock_section {
+        .rockSwiper {
+            margin: 0 50px;
+        }
+    }
+
+    .specialties_section {
+        .specialties {
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 4;
+        }
+
+        .specialty {
+            &:nth-child(1) {
+                height: 154px;
+                grid-column: 1/3;
+                grid-row: 1;
+            }
+
+            &:nth-child(2) {
+                height: 154px;
+                grid-column: 3/5;
+                grid-row: 1;
+            }
+
+            &:nth-child(3) {
+                height: 154px;
+                grid-column: 5/7;
+                grid-row: 1;
+            }
+
+            &:nth-child(4) {
+                height: 154px;
+                grid-column: 1/3;
+                grid-row: 2;
+            }
+
+            &:nth-child(5) {
+                height: 154px;
+                grid-column: 3/5;
+                grid-row: 2;
+            }
+
+            &:nth-child(6) {
+                height: 154px;
+                grid-column: 5/7;
+                grid-row: 2;
+            }
+
+            &:nth-child(7) {
+                height: 154px;
+                grid-column: 1/3;
+                grid-row: 3;
+            }
+
+            &:nth-child(8) {
+                height: 154px;
+                grid-column: 3/5;
+                grid-row: 3;
+            }
+
+            &:nth-child(9) {
+                height: 154px;
+                grid-column: 5/7;
+                grid-row: 3;
+            }
+
+            &:nth-child(10) {
+                height: 154px;
+                grid-column: 1/4;
+                grid-row: 4;
+            }
+
+            &:nth-child(11) {
+                height: 154px;
+                grid-column: 4/7;
+                grid-row: 4;
+            }
+
+        }
+    }
+
+    .development_areas{
+        .card_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .development_card{
+            width: calc(50% - 8px);
+        }
+    }
+
+
+    /* ========= Industry page ======== */
+    .hospital_industry{
+        .skala{
+            font-size: 14px;
+        }
+    }
+
+    .question_form{
+        .h2{
+            margin-bottom: 24px;
+        }
+        .main_block{
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        .main_img{
+            display: none;
+        }
+        .main_left{
+            max-width: 100%;
+            text-align: center;
+        }
+        form{
+            width: 100%;
+        }
+    }
 }
-@media (max-width:992px){
-    .container{
+
+@media (max-width:992px) {
+    .container {
         max-width: 720px;
     }
+
+    /* Header */
+    .header{
+        .hamurger_menu{
+            .login_btn{
+                margin-right: 12px;
+            }
+        }
+        .header_menus{
+            width: 82vw;
+            height: 96vh;
+            display: flex; 
+            flex-direction: column;
+            position: fixed;
+            z-index: 1000;
+            top: 16px;
+            right: 3px;
+            background-color: #FFF;
+            box-shadow: -4px 4px 8.3px 0px rgba(0, 0, 0, 0.10);
+            padding: 68px 24px 24px;
+            opacity: 0;
+            transform: translateX(100%); 
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            pointer-events: none; 
+        
+            &.active {
+                opacity: 1;
+                transform: translateX(0);
+                pointer-events: auto; 
+            }
+            .close{
+                position: absolute;
+                top: 20px;
+                right: 16px;
+            }
+            .header_right{
+                position: absolute;
+                bottom: 24px;
+                left: 24px;
+            }
+            .login_btn{
+                color: $white;
+            }
+        }
+    }
+
+    /* Footer */
+    .footer{
+        .footer_main{
+            display: grid !important;
+            grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+            flex-wrap: wrap;
+            align-items: center !important;
+        }
+    }
+
+
+    /* ========= Main page ======== */
+    .specialties_section{
+        .specialties {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 6;
+        }
+
+        .specialty {
+            &:nth-child(1) {
+                height: 154px;
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            &:nth-child(2) {
+                height: 154px;
+                grid-column: 2;
+                grid-row: 1;
+            }
+
+            &:nth-child(3) {
+                height: 154px;
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            &:nth-child(4) {
+                height: 154px;
+                grid-column: 2;
+                grid-row: 2;
+            }
+
+            &:nth-child(5) {
+                height: 154px;
+                grid-column: 1;
+                grid-row: 3;
+            }
+
+            &:nth-child(6) {
+                height: 154px;
+                grid-column: 2;
+                grid-row: 3;
+            }
+
+            &:nth-child(7) {
+                height: 154px;
+                grid-column: 1;
+                grid-row: 4;
+            }
+
+            &:nth-child(8) {
+                height: 154px;
+                grid-column: 2;
+                grid-row: 4;
+            }
+
+            &:nth-child(9) {
+                height: 154px;
+                grid-column: 1;
+                grid-row: 5;
+            }
+
+            &:nth-child(10) {
+                height: 154px;
+                grid-column: 2;
+                grid-row: 5;
+            }
+
+            &:nth-child(11) {
+                height: 154px;
+                grid-column: 1/3;
+                grid-row: 6;
+            }
+
+        }
+    }
+
+    .research_work{
+        .work_main{
+            grid-template-columns: 60% 40%;
+        }
+        .work_right_items{
+            gap: 40px;
+        }
+    }
+
+    .more_information{
+        .information_cards{
+            flex-wrap: wrap;
+        }
+        .information_card{
+            width: calc(50% - 8px);
+        }
+    }
+
+
+    /* ========= Industry page ======== */
+    .hospital_industry{
+        .skalas{
+            flex-wrap: wrap;
+        }
+        .steps{
+            gap: 24px 80px;
+        }
+    }
+
+    .products{
+        .development_card{
+            width: calc(50% - 8px);
+        }
+    }
+
+
+    /* ========= Product page ======== */
+    .product_hero{
+        .specialty{
+            width: calc(50% - 4px);
+        }
+    }
+
 }
-@media (max-width:768px){
-    .container{
+
+@media (max-width:768px) {
+    .container {
         max-width: 540px;
     }
-}
-@media (max-width:576px){
-    .container{
-        max-width: 100%;
+
+    /* ========= Main page ======== */
+    .development_areas{
+        .development_card{
+            width: 100%;
+        }
     }
+
+    .research_work{
+        .work_main{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .work_right_items{
+            margin: 0;
+        }
+    }
+
+
+    /* ========= Industry page ======== */
+    .hospital_industry{
+        .steps{
+            display: flex;
+
+        }
+    }
+    .products{
+        .development_card{
+            width: 100%;
+        }
+    }
+    .question_form{
+        form{
+            .form_flex{
+                flex-wrap: wrap;
+                .form_group{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    /* ========= Product page ======== */
+    .product_hero{
+        .specialty{
+            width: 100%;
+        }
+    }
+    .who_benefit{
+        .org_card{
+            width: 100%;
+        }
+    }
+    .advantages{
+        .steps{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .button_groups{
+            display: flex;
+            flex-wrap: wrap;
+            a{
+                width: calc(50% - 8px);
+                &:last-child{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    /* Header */
+    .header{
+        .header_logo{
+            img{
+                width: 137px;
+            }
+        }
+        .hamurger_menu {
+            display: flex;
+            align-items: center;
+        }
+        .header_block{
+            padding: 16px 12px;
+        }
+        .header_menus{
+            gap: 16px;
+            li{
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+        .header_right{
+            .language_selectors{
+                font-size: 16px;
+            }
+        }
+
+        .login_btn{
+            padding: 8px 16px;
+            font-size: 15.263px !important;
+            display: flex;
+            align-items: center;
+            gap: 6.78px;
+            img{
+                margin: 0;
+                width: 12px;
+            }
+        }
+    }
+
+    /* Footer */
+    .footer{
+        padding: 40px 0 32px;
+        .footer_main {
+            display: flex !important;
+            gap: 32px;
+        }
+        .footer_logo{
+            margin-bottom: 40px;
+        }
+        .footer_email{
+            font-size: 14px;
+        }
+        .footer_socials{
+            margin-top: 24px;
+        }
+        .footer_item{
+            li{
+                font-size: 14px;
+            }
+        }
+        .footer_bottom{
+            margin-top: 32px;
+            padding-top: 16px;
+            font-size: 14px;
+        }
+    }
+
+
+    /* ========= Main page ======== */
+    .rock_section{
+        margin-top: 24px;
+        margin-bottom: 32px;
+        .rockSwiper{
+            display: none;
+        }
+        .swiper_btn{
+            display: none;
+        }
+        .rock_items{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .rock_item{
+            border-radius: 7px;
+            background-color: rgba(255, 255, 255, 0.10);
+            padding: 10px 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: $white;
+            font-family: "Inter";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.28px;
+        }
+    }
+    .specialties_section{
+        .specialties{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .specialty{
+            height: 116px;
+            overflow: hidden;
+            .specialty_img_block{
+                display: none;
+            }
+            .specialty_mobile_img{
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+        }
+
+    }
+    .development_areas{
+        padding: 72px 0 69px;
+        h2{
+            font-size: 26px;
+            margin-bottom: 24px;
+        }
+        .card_wrapper{
+            gap: 12px;
+        }
+        .development_card{
+            padding: 16px;
+            .left_icon{
+                padding: 16px;
+            }
+            .right_icon{
+                top: -16px;
+                right: -16px;
+                img{
+                    width: 150px;
+                }
+            }
+            h3{
+                font-size: 22px;
+                margin-bottom: 14px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        
+    }
+    .research_work{
+        padding: 50px 0;
+        h2{
+            font-size: 26px;
+            max-width: 258px;
+            margin: 0 auto 24px;
+        }
+        .scroll_card{
+            width: calc(100% - 20px);
+            padding: 20px 27px 20px 16px;
+            .scroll_img{
+                width: 130px;
+                top: 9px;
+                right: -15px;
+            }
+            &_title{
+                font-size: 20px;
+                margin-bottom: 22px;
+            }
+            &_body{
+                gap: 17px;
+                height: 380px;
+                &::-webkit-scrollbar {
+                    display: none;
+                    position: absolute;
+                    background-color: #E0E0E0;
+                    width: 3px;
+                    left: unset;
+                    right: -20px;
+                }
+            }
+            &_blur{
+                height: 40px;
+            }
+        }
+        .custom_scrollbar{
+            left: unset;
+            right: 0;
+        }
+        .scroll_card_item{
+            span{
+                padding: 4px 6px;
+                font-size: 14px;
+
+            }
+            h3{
+                font-size: 16px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .work_right_items{
+            gap: 32px;
+        }
+        .work_right_item{
+            gap: 16px;
+            .work_right_icon{
+                padding: 15px 10px;
+            }
+            h3{
+                font-size: 30px;
+                span{
+                    font-size: 18px;
+                }
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+
+    }
+    .partners_integrations{
+        padding: 72px 0;
+        h2{
+            font-size: 26px;
+            max-width: 100%;
+            margin: 0 auto 24px;
+        }
+        .swiper_part{
+            display: none;
+        }
+        .cards_part{
+            display: block;
+        }
+        .partners_cards{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .partners_card {
+            border-radius: 17px;
+            background-color: $light_blue;
+            padding: 16px;
+        
+            img {
+              margin-bottom: 24px;
+            }
+        
+            h3 {
+              color: $black;
+              font-family: "Inter";
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              letter-spacing: -0.48px;
+              margin-bottom: 24px;
+            }
+        
+            a {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+        
+              color: $blue;
+              font-family: "Inter";
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              letter-spacing: -0.36px;
+              transition: all .3s ease;
+        
+              img {
+                margin: 0;
+              }
+        
+              svg {
+                margin: 0;
+                transition: all .3s ease;
+              }
+        
+              &:hover {
+                color: $dark_blue;
+        
+                path {
+                  fill: $dark_blue;
+                }
+              }
+            }
+          }
+        .show_more{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            margin-top: 24px;
+            border-bottom: 1px solid $blue;
+            color: $blue;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.32px;
+            cursor: pointer;
+        }
+    }
+    .more_information{
+        h2{
+            font-size: 26px;
+            max-width: 100%;
+            margin: 0 auto 24px;
+        }
+        .information_card{
+            width: 100%;
+            height: 250px;
+            .big_question{
+                width: 85px;
+                transform: rotate(40deg);
+                top: 70px;
+                right: -19px;
+            }
+            .little_question{
+                transform: rotate(-60deg);
+                right: -23px;
+            }
+        }
+        .card_body{
+            max-width: 268px;
+        }
+        h3{
+            font-size: 22px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .button{
+            font-size: 16px;
+        }
+    }
+
+
+
+    /* ========= Industry page ======== */
+    /* ========= Product page ======== */
+
 }
