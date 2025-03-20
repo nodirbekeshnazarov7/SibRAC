@@ -128,42 +128,47 @@
         }
     }
 
-    .development_areas{
-        .card_wrapper{
+    .development_areas {
+        .card_wrapper {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
-        .development_card{
+
+        .development_card {
             width: calc(50% - 8px);
         }
     }
 
 
     /* ========= Industry page ======== */
-    .hospital_industry{
-        .skala{
+    .hospital_industry {
+        .skala {
             font-size: 14px;
         }
     }
 
-    .question_form{
-        .h2{
+    .question_form {
+        .h2 {
             margin-bottom: 24px;
         }
-        .main_block{
+
+        .main_block {
             flex-direction: column;
             align-items: center;
             gap: 40px;
         }
-        .main_img{
+
+        .main_img {
             display: none;
         }
-        .main_left{
+
+        .main_left {
             max-width: 100%;
             text-align: center;
         }
-        form{
+
+        form {
             width: 100%;
         }
     }
@@ -175,16 +180,17 @@
     }
 
     /* Header */
-    .header{
-        .hamurger_menu{
-            .login_btn{
+    .header {
+        .hamurger_menu {
+            .login_btn {
                 margin-right: 12px;
             }
         }
-        .header_menus{
+
+        .header_menus {
             width: 82vw;
             height: 96vh;
-            display: flex; 
+            display: flex;
             flex-direction: column;
             position: fixed;
             z-index: 1000;
@@ -194,34 +200,37 @@
             box-shadow: -4px 4px 8.3px 0px rgba(0, 0, 0, 0.10);
             padding: 68px 24px 24px;
             opacity: 0;
-            transform: translateX(100%); 
+            transform: translateX(100%);
             transition: opacity 0.4s ease, transform 0.4s ease;
-            pointer-events: none; 
-        
+            pointer-events: none;
+
             &.active {
                 opacity: 1;
                 transform: translateX(0);
-                pointer-events: auto; 
+                pointer-events: auto;
             }
-            .close{
+
+            .close {
                 position: absolute;
                 top: 20px;
                 right: 16px;
             }
-            .header_right{
+
+            .header_right {
                 position: absolute;
                 bottom: 24px;
                 left: 24px;
             }
-            .login_btn{
+
+            .login_btn {
                 color: $white;
             }
         }
     }
 
     /* Footer */
-    .footer{
-        .footer_main{
+    .footer {
+        .footer_main {
             display: grid !important;
             grid-template-columns: calc(50% - 20px) calc(50% - 20px);
             flex-wrap: wrap;
@@ -231,7 +240,7 @@
 
 
     /* ========= Main page ======== */
-    .specialties_section{
+    .specialties_section {
         .specialties {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 6;
@@ -307,45 +316,48 @@
         }
     }
 
-    .research_work{
-        .work_main{
+    .research_work {
+        .work_main {
             grid-template-columns: 60% 40%;
         }
-        .work_right_items{
+
+        .work_right_items {
             gap: 40px;
         }
     }
 
-    .more_information{
-        .information_cards{
+    .more_information {
+        .information_cards {
             flex-wrap: wrap;
         }
-        .information_card{
+
+        .information_card {
             width: calc(50% - 8px);
         }
     }
 
 
     /* ========= Industry page ======== */
-    .hospital_industry{
-        .skalas{
+    .hospital_industry {
+        .skalas {
             flex-wrap: wrap;
         }
-        .steps{
+
+        .steps {
             gap: 24px 80px;
         }
     }
 
-    .products{
-        .development_card{
+    .products {
+        .development_card {
             width: calc(50% - 8px);
         }
     }
 
 
     /* ========= Product page ======== */
-    .product_hero{
-        .specialty{
+    .product_hero {
+        .specialty {
             width: calc(50% - 4px);
         }
     }
@@ -358,42 +370,46 @@
     }
 
     /* ========= Main page ======== */
-    .development_areas{
-        .development_card{
+    .development_areas {
+        .development_card {
             width: 100%;
         }
     }
 
-    .research_work{
-        .work_main{
+    .research_work {
+        .work_main {
             display: flex;
             flex-direction: column;
             gap: 40px;
             align-items: flex-start;
         }
-        .work_right_items{
+
+        .work_right_items {
             margin: 0;
         }
     }
 
 
     /* ========= Industry page ======== */
-    .hospital_industry{
-        .steps{
+    .hospital_industry {
+        .steps {
             display: flex;
 
         }
     }
-    .products{
-        .development_card{
+
+    .products {
+        .development_card {
             width: 100%;
         }
     }
-    .question_form{
-        form{
-            .form_flex{
+
+    .question_form {
+        form {
+            .form_flex {
                 flex-wrap: wrap;
-                .form_group{
+
+                .form_group {
                     width: 100%;
                 }
             }
@@ -402,27 +418,32 @@
 
 
     /* ========= Product page ======== */
-    .product_hero{
-        .specialty{
+    .product_hero {
+        .specialty {
             width: 100%;
         }
     }
-    .who_benefit{
-        .org_card{
+
+    .who_benefit {
+        .org_card {
             width: 100%;
         }
     }
-    .advantages{
-        .steps{
+
+    .advantages {
+        .steps {
             display: flex;
             flex-wrap: wrap;
         }
-        .button_groups{
+
+        .button_groups {
             display: flex;
             flex-wrap: wrap;
-            a{
+
+            a {
                 width: calc(50% - 8px);
-                &:last-child{
+
+                &:last-child {
                     width: 100%;
                 }
             }
@@ -438,40 +459,46 @@
     }
 
     /* Header */
-    .header{
-        .header_logo{
-            img{
+    .header {
+        .header_logo {
+            img {
                 width: 137px;
             }
         }
+
         .hamurger_menu {
             display: flex;
             align-items: center;
         }
-        .header_block{
+
+        .header_block {
             padding: 16px 12px;
         }
-        .header_menus{
+
+        .header_menus {
             gap: 16px;
-            li{
-                a{
+
+            li {
+                a {
                     font-size: 18px;
                 }
             }
         }
-        .header_right{
-            .language_selectors{
+
+        .header_right {
+            .language_selectors {
                 font-size: 16px;
             }
         }
 
-        .login_btn{
+        .login_btn {
             padding: 8px 16px;
             font-size: 15.263px !important;
             display: flex;
             align-items: center;
             gap: 6.78px;
-            img{
+
+            img {
                 margin: 0;
                 width: 12px;
             }
@@ -479,27 +506,33 @@
     }
 
     /* Footer */
-    .footer{
+    .footer {
         padding: 40px 0 32px;
+
         .footer_main {
             display: flex !important;
             gap: 32px;
         }
-        .footer_logo{
+
+        .footer_logo {
             margin-bottom: 40px;
         }
-        .footer_email{
+
+        .footer_email {
             font-size: 14px;
         }
-        .footer_socials{
+
+        .footer_socials {
             margin-top: 24px;
         }
-        .footer_item{
-            li{
+
+        .footer_item {
+            li {
                 font-size: 14px;
             }
         }
-        .footer_bottom{
+
+        .footer_bottom {
             margin-top: 32px;
             padding-top: 16px;
             font-size: 14px;
@@ -508,21 +541,25 @@
 
 
     /* ========= Main page ======== */
-    .rock_section{
+    .rock_section {
         margin-top: 24px;
         margin-bottom: 32px;
-        .rockSwiper{
+
+        .rockSwiper {
             display: none;
         }
-        .swiper_btn{
+
+        .swiper_btn {
             display: none;
         }
-        .rock_items{
+
+        .rock_items {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
         }
-        .rock_item{
+
+        .rock_item {
             border-radius: 7px;
             background-color: rgba(255, 255, 255, 0.10);
             padding: 10px 12px;
@@ -538,19 +575,23 @@
             letter-spacing: -0.28px;
         }
     }
-    .specialties_section{
-        .specialties{
+
+    .specialties_section {
+        .specialties {
             display: flex;
             flex-direction: column;
             gap: 12px;
         }
-        .specialty{
+
+        .specialty {
             height: 116px;
             overflow: hidden;
-            .specialty_img_block{
+
+            .specialty_img_block {
                 display: none;
             }
-            .specialty_mobile_img{
+
+            .specialty_mobile_img {
                 display: block;
                 position: absolute;
                 bottom: 0;
@@ -560,59 +601,75 @@
         }
 
     }
-    .development_areas{
+
+    .development_areas {
         padding: 72px 0 69px;
-        h2{
+
+        h2 {
             font-size: 26px;
             margin-bottom: 24px;
         }
-        .card_wrapper{
+
+        .card_wrapper {
             gap: 12px;
         }
-        .development_card{
+
+        .development_card {
             padding: 16px;
-            .left_icon{
+
+            .left_icon {
                 padding: 16px;
             }
-            .right_icon{
+
+            .right_icon {
                 top: -16px;
                 right: -16px;
-                img{
+
+                img {
                     width: 150px;
                 }
             }
-            h3{
+
+            h3 {
                 font-size: 22px;
                 margin-bottom: 14px;
             }
-            p{
+
+            p {
                 font-size: 16px;
             }
         }
-        
+
     }
-    .research_work{
+
+    .research_work {
         padding: 50px 0;
-        h2{
+
+        h2 {
             font-size: 26px;
             max-width: 258px;
             margin: 0 auto 24px;
         }
-        .scroll_card{
+
+        .scroll_card {
             width: calc(100% - 20px);
             padding: 20px 27px 20px 16px;
-            .scroll_img{
+
+            .scroll_img {
                 width: 130px;
                 top: 9px;
                 right: -15px;
             }
-            &_title{
+
+            &_title {
                 font-size: 20px;
                 margin-bottom: 22px;
             }
-            &_body{
+
+            &_body {
                 gap: 17px;
                 height: 380px;
+
                 &::-webkit-scrollbar {
                     display: none;
                     position: absolute;
@@ -622,118 +679,136 @@
                     right: -20px;
                 }
             }
-            &_blur{
+
+            &_blur {
                 height: 40px;
             }
         }
-        .custom_scrollbar{
+
+        .custom_scrollbar {
             left: unset;
             right: 0;
         }
-        .scroll_card_item{
-            span{
+
+        .scroll_card_item {
+            span {
                 padding: 4px 6px;
                 font-size: 14px;
 
             }
-            h3{
+
+            h3 {
                 font-size: 16px;
             }
-            p{
+
+            p {
                 font-size: 14px;
             }
         }
-        .work_right_items{
+
+        .work_right_items {
             gap: 32px;
         }
-        .work_right_item{
+
+        .work_right_item {
             gap: 16px;
-            .work_right_icon{
+
+            .work_right_icon {
                 padding: 15px 10px;
             }
-            h3{
+
+            h3 {
                 font-size: 30px;
-                span{
+
+                span {
                     font-size: 18px;
                 }
             }
-            p{
+
+            p {
                 font-size: 16px;
             }
         }
 
     }
-    .partners_integrations{
+
+    .partners_integrations {
         padding: 72px 0;
-        h2{
+
+        h2 {
             font-size: 26px;
             max-width: 100%;
             margin: 0 auto 24px;
         }
-        .swiper_part{
+
+        .swiper_part {
             display: none;
         }
-        .cards_part{
+
+        .cards_part {
             display: block;
         }
-        .partners_cards{
+
+        .partners_cards {
             display: flex;
             flex-direction: column;
             gap: 12px;
         }
+
         .partners_card {
             border-radius: 17px;
             background-color: $light_blue;
             padding: 16px;
-        
+
             img {
-              margin-bottom: 24px;
+                margin-bottom: 24px;
             }
-        
+
             h3 {
-              color: $black;
-              font-family: "Inter";
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 500;
-              line-height: normal;
-              letter-spacing: -0.48px;
-              margin-bottom: 24px;
+                color: $black;
+                font-family: "Inter";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: -0.48px;
+                margin-bottom: 24px;
             }
-        
+
             a {
-              display: flex;
-              align-items: center;
-              gap: 8px;
-        
-              color: $blue;
-              font-family: "Inter";
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: normal;
-              letter-spacing: -0.36px;
-              transition: all .3s ease;
-        
-              img {
-                margin: 0;
-              }
-        
-              svg {
-                margin: 0;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                color: $blue;
+                font-family: "Inter";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.36px;
                 transition: all .3s ease;
-              }
-        
-              &:hover {
-                color: $dark_blue;
-        
-                path {
-                  fill: $dark_blue;
+
+                img {
+                    margin: 0;
                 }
-              }
+
+                svg {
+                    margin: 0;
+                    transition: all .3s ease;
+                }
+
+                &:hover {
+                    color: $dark_blue;
+
+                    path {
+                        fill: $dark_blue;
+                    }
+                }
             }
-          }
-        .show_more{
+        }
+
+        .show_more {
             border: none;
             outline: none;
             background-color: transparent;
@@ -749,36 +824,44 @@
             cursor: pointer;
         }
     }
-    .more_information{
-        h2{
+
+    .more_information {
+        h2 {
             font-size: 26px;
             max-width: 100%;
             margin: 0 auto 24px;
         }
-        .information_card{
+
+        .information_card {
             width: 100%;
             height: 250px;
-            .big_question{
+
+            .big_question {
                 width: 85px;
                 transform: rotate(40deg);
                 top: 70px;
                 right: -19px;
             }
-            .little_question{
+
+            .little_question {
                 transform: rotate(-60deg);
                 right: -23px;
             }
         }
-        .card_body{
+
+        .card_body {
             max-width: 268px;
         }
-        h3{
+
+        h3 {
             font-size: 22px;
         }
-        p{
+
+        p {
             font-size: 16px;
         }
-        .button{
+
+        .button {
             font-size: 16px;
         }
     }
@@ -786,6 +869,233 @@
 
 
     /* ========= Industry page ======== */
-    /* ========= Product page ======== */
+    .hospital_industry {
+        padding: 65px 0 48px;
 
+        h2 {
+            font-size: 26px;
+            margin-bottom: 24px;
+            max-width: 220px;
+        }
+
+        .skalas {
+            gap: 4px;
+            margin-bottom: 42px;
+        }
+
+        .skala {
+            font-size: 14px;
+        }
+
+        .steps {
+            gap: 24px;
+        }
+
+        .step {
+            .step_counter {
+                padding: 6px 8px;
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .products {
+        padding: 72px 0;
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 24px;
+        }
+
+        .card_wrapper {
+            gap: 12px;
+        }
+
+        .development_card {
+            padding: 16px;
+
+            .left_icon {
+                padding: 16px;
+            }
+
+            .right_icon {
+                h3 {
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 32px;
+            }
+
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .question_form {
+        padding: 51px 0 48px;
+        margin-bottom: 80px;
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .main_block {
+            gap: 32px;
+        }
+
+        form {
+            padding: 18px;
+            border-radius: 11.246px;
+            box-shadow: 2.249px 2.249px 8.153px 0px rgba(0, 0, 0, 0.20);
+
+            .field_part {
+                gap: 11.25px;
+            }
+
+            .form_flex {
+                flex-direction: row;
+                gap: 4.5px;
+
+                .form_group {
+                    width: calc(50% - 2.25px);
+                }
+            }
+
+            .form_group {
+                gap: 4.5px;
+            }
+
+            label {
+                font-size: 12px;
+            }
+
+            input {
+                padding: 12px 9px;
+                font-size: 14px;
+
+                &::placeholder {
+                    font-size: 14px;
+                }
+            }
+
+            textarea {
+                padding: 12px 9px;
+                font-size: 14px;
+                height: 63px;
+            }
+
+            button {
+                padding: 9px 12px;
+                font-size: 12px;
+                margin: 16px 0;
+            }
+
+            .form_footer {
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    /* ========= Product page ======== */
+    .product_hero{
+        padding: 65px 0 32px;
+        h2{
+            font-size: 26px;
+            margin-bottom: 24px;
+        }
+        p.text{
+            width: 85%;
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+        .specialties{
+            gap: 12px;
+        }
+       .specialty{
+        overflow: hidden;
+        height: 116px;
+        .specialty_title{
+            font-size: 20px;
+        }
+        .specialty_img_block {
+            display: none;
+        }
+
+        .specialty_mobile_img {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+       }
+    }
+    .who_benefit{
+        padding: 80px 0;
+        h2{
+            font-size: 26px;
+            margin-bottom: 24px;
+        }
+        .org_cards{
+            gap: 12px;
+        }
+        .org_card{
+            padding: 16px;
+            border-radius: 17px;
+            &_icon{
+                padding: 16px;
+                border-radius: 8px;
+            }
+            &_title{
+                font-size: 20px;
+            }
+        }
+    }
+    .advantages{
+        padding: 0 0 80px;
+        h2{
+            font-size: 26px;
+            margin-bottom: 24px;
+        }
+        .steps_card{
+            padding: 24px 16px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 4px 4px 14.5px 0px rgba(0, 0, 0, 0.20);
+        }
+        .steps{
+            gap: 24px;
+        }
+        .step{
+            &_counter{
+                padding: 6px 8px;
+                font-size: 14px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        .button_groups{
+            gap: 8px;
+            a{
+                border-radius: 8px;
+                font-size: 14px;
+                width: calc(50% - 4px);
+            }
+        }
+    }
 }

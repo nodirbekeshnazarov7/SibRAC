@@ -498,6 +498,9 @@ ul {
   grid-column: 6/11;
   grid-row: 3/4;
 }
+.specialties_section .specialty .specialty_mobile_img {
+  display: none;
+}
 .specialties_section .specialty:hover {
   background-color: #fff;
 }
@@ -506,9 +509,6 @@ ul {
 }
 .specialties_section .specialty:hover .specialty_arrow {
   display: block;
-}
-.specialties_section .specialty:hover .specialty_mobile_img {
-  display: none;
 }
 .specialties_section .specialty:hover .specialty_img_block {
   display: block;
@@ -1499,6 +1499,9 @@ ul {
   top: 0;
   right: 80px;
 }
+.product_hero .specialty .specialty_mobile_img {
+  display: none;
+}
 .product_hero .specialty .specialty_img {
   position: relative;
 }
@@ -2295,5 +2298,194 @@ ul {
     font-size: 16px;
   }
   /* ========= Industry page ======== */
+  .hospital_industry {
+    padding: 65px 0 48px;
+  }
+  .hospital_industry h2 {
+    font-size: 26px;
+    margin-bottom: 24px;
+    max-width: 220px;
+  }
+  .hospital_industry .skalas {
+    gap: 4px;
+    margin-bottom: 42px;
+  }
+  .hospital_industry .skala {
+    font-size: 14px;
+  }
+  .hospital_industry .steps {
+    gap: 24px;
+  }
+  .hospital_industry .step .step_counter {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+  .hospital_industry .step p {
+    font-size: 16px;
+  }
+  .products {
+    padding: 72px 0;
+  }
+  .products h2 {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+  .products .card_wrapper {
+    gap: 12px;
+  }
+  .products .development_card {
+    padding: 16px;
+  }
+  .products .development_card .left_icon {
+    padding: 16px;
+  }
+  .products .development_card .right_icon h3 {
+    font-size: 20px;
+  }
+  .products .development_card p {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .products .development_card a {
+    font-size: 16px;
+  }
+  .question_form {
+    padding: 51px 0 48px;
+    margin-bottom: 80px;
+  }
+  .question_form h2 {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+  .question_form p {
+    font-size: 16px;
+  }
+  .question_form .main_block {
+    gap: 32px;
+  }
+  .question_form form {
+    padding: 18px;
+    border-radius: 11.246px;
+    box-shadow: 2.249px 2.249px 8.153px 0px rgba(0, 0, 0, 0.2);
+  }
+  .question_form form .field_part {
+    gap: 11.25px;
+  }
+  .question_form form .form_flex {
+    flex-direction: row;
+    gap: 4.5px;
+  }
+  .question_form form .form_flex .form_group {
+    width: calc(50% - 2.25px);
+  }
+  .question_form form .form_group {
+    gap: 4.5px;
+  }
+  .question_form form label {
+    font-size: 12px;
+  }
+  .question_form form input {
+    padding: 12px 9px;
+    font-size: 14px;
+  }
+  .question_form form input::placeholder {
+    font-size: 14px;
+  }
+  .question_form form textarea {
+    padding: 12px 9px;
+    font-size: 14px;
+    height: 63px;
+  }
+  .question_form form button {
+    padding: 9px 12px;
+    font-size: 12px;
+    margin: 16px 0;
+  }
+  .question_form form .form_footer {
+    font-size: 14px;
+  }
   /* ========= Product page ======== */
+  .product_hero {
+    padding: 65px 0 32px;
+  }
+  .product_hero h2 {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+  .product_hero p.text {
+    width: 85%;
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .product_hero .specialties {
+    gap: 12px;
+  }
+  .product_hero .specialty {
+    overflow: hidden;
+    height: 116px;
+  }
+  .product_hero .specialty .specialty_title {
+    font-size: 20px;
+  }
+  .product_hero .specialty .specialty_img_block {
+    display: none;
+  }
+  .product_hero .specialty .specialty_mobile_img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .who_benefit {
+    padding: 80px 0;
+  }
+  .who_benefit h2 {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+  .who_benefit .org_cards {
+    gap: 12px;
+  }
+  .who_benefit .org_card {
+    padding: 16px;
+    border-radius: 17px;
+  }
+  .who_benefit .org_card_icon {
+    padding: 16px;
+    border-radius: 8px;
+  }
+  .who_benefit .org_card_title {
+    font-size: 20px;
+  }
+  .advantages {
+    padding: 0 0 80px;
+  }
+  .advantages h2 {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+  .advantages .steps_card {
+    padding: 24px 16px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 14.5px 0px rgba(0, 0, 0, 0.2);
+  }
+  .advantages .steps {
+    gap: 24px;
+  }
+  .advantages .step_counter {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+  .advantages .step p {
+    font-size: 16px;
+  }
+  .advantages .button_groups {
+    gap: 8px;
+  }
+  .advantages .button_groups a {
+    border-radius: 8px;
+    font-size: 14px;
+    width: calc(50% - 4px);
+  }
 }/*# sourceMappingURL=main.css.map */

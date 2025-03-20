@@ -129,6 +129,9 @@
       grid-row: 3/4;
     }
 
+    .specialty_mobile_img{
+      display: none;
+    }
     &:hover {
       background-color: $white;
 
@@ -138,9 +141,6 @@
 
       .specialty_arrow {
         display: block;
-      }
-      .specialty_mobile_img{
-        display: none;
       }
       .specialty_img_block {
         display: block;
