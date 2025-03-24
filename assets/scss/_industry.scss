@@ -95,6 +95,8 @@
     }
     .development_card{
       width: calc(33.33% - 11.33px);
+      position: relative;
+      height: 332px;
       border-radius: 20px;
       background-color: $light_blue;
       padding: 24px;
@@ -124,6 +126,7 @@
             letter-spacing: -0.48px;
         }
       }
+
       p{
         color: $black;
         font-family: "Inter";
@@ -133,9 +136,11 @@
         line-height: normal;
         letter-spacing: -0.36px;
         opacity: .6;
-        margin-bottom: 48px;
       }
       a{
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
         display: flex;
         align-items: center;
         gap: 8px;

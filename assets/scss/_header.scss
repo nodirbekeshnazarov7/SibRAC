@@ -8,7 +8,11 @@
         padding: 16px 56px;
         border-radius: 25px;
     }
-
+    .header_logo{
+        img{
+            width: 173px;
+        }
+    }
     .header_menus {
         display: flex;
         gap: 32px;

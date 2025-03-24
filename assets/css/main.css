@@ -269,6 +269,9 @@ ul {
   padding: 16px 56px;
   border-radius: 25px;
 }
+.header .header_logo img {
+  width: 173px;
+}
 .header .header_menus {
   display: flex;
   gap: 32px;
@@ -324,6 +327,7 @@ ul {
   gap: 40px;
 }
 .footer .footer_logo {
+  width: 173px;
   margin-bottom: 35px;
 }
 .footer .footer_email {
@@ -464,6 +468,9 @@ ul {
   height: 178px;
   grid-column: 1/7;
   grid-row: 2;
+}
+.specialties_section .specialty:nth-child(4) .specialty_img_block {
+  right: 50px;
 }
 .specialties_section .specialty:nth-child(5) {
   height: 178px;
@@ -621,11 +628,18 @@ ul {
   grid-column: 1/4;
   grid-row: 2/3;
 }
+.development_areas .development_card:nth-child(4) .card_header {
+  height: 196px;
+}
 .development_areas .development_card:nth-child(5) {
   grid-column: 4/7;
   grid-row: 2/3;
 }
+.development_areas .development_card:nth-child(5) .card_header {
+  height: 196px;
+}
 .development_areas .development_card .card_header {
+  height: 196px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -633,6 +647,7 @@ ul {
 .development_areas .development_card .left_icon {
   padding: 20px;
   background-color: #fff;
+  border-radius: 10px;
 }
 .development_areas .development_card .left_icon img {
   opacity: 0.4;
@@ -644,6 +659,11 @@ ul {
   position: absolute;
   top: -40px;
   left: -60px;
+  z-index: 0;
+}
+.development_areas .development_card .right_icon img {
+  position: relative;
+  z-index: 2;
 }
 .development_areas .development_card h3 {
   color: #000;
@@ -653,6 +673,7 @@ ul {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.52px;
+  margin-bottom: 16px;
 }
 .development_areas .development_card p {
   color: #000;
@@ -824,6 +845,9 @@ ul {
   font-weight: 600;
   line-height: normal;
 }
+.research_work .work_right_item h3.without_span {
+  font-size: 30px;
+}
 .research_work .work_right_item h3 span {
   font-size: 22px;
   font-weight: 500;
@@ -863,6 +887,9 @@ ul {
   border-radius: 20px;
   background-color: #EBF1FE;
   padding: 24px;
+  height: 269px;
+  display: flex;
+  flex-direction: column;
 }
 .partners_integrations .swiper-slide img {
   margin-bottom: 32px;
@@ -881,6 +908,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-top: auto;
   color: #06F;
   font-family: "Inter";
   font-size: 18px;
@@ -939,6 +967,7 @@ ul {
   gap: 16px;
 }
 .more_information .information_card {
+  width: calc(25% - 12px);
   position: relative;
   background-color: #EBF1FE;
   border-radius: 20px;
@@ -1146,6 +1175,8 @@ ul {
 }
 .products .development_card {
   width: calc(33.33% - 11.33px);
+  position: relative;
+  height: 332px;
   border-radius: 20px;
   background-color: #EBF1FE;
   padding: 24px;
@@ -1185,9 +1216,11 @@ ul {
   line-height: normal;
   letter-spacing: -0.36px;
   opacity: 0.6;
-  margin-bottom: 48px;
 }
 .products .development_card a {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1768,6 +1801,9 @@ ul {
   .development_areas .development_card {
     width: calc(50% - 8px);
   }
+  .development_areas .development_card .card_header {
+    height: auto;
+  }
   /* ========= Industry page ======== */
   .hospital_industry .skala {
     font-size: 14px;
@@ -2090,6 +2126,18 @@ ul {
     bottom: 0;
     right: 0;
   }
+  .specialties_section .specialty:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  .specialties_section .specialty:hover .specialty_title {
+    color: #fff;
+  }
+  .specialties_section .specialty:hover .specialty_arrow {
+    display: none;
+  }
+  .specialties_section .specialty:hover .specialty_img_block {
+    display: none;
+  }
   .development_areas {
     padding: 72px 0 69px;
   }
@@ -2105,10 +2153,6 @@ ul {
   }
   .development_areas .development_card .left_icon {
     padding: 16px;
-  }
-  .development_areas .development_card .right_icon {
-    top: -16px;
-    right: -16px;
   }
   .development_areas .development_card .right_icon img {
     width: 150px;
@@ -2334,6 +2378,7 @@ ul {
     gap: 12px;
   }
   .products .development_card {
+    height: auto;
     padding: 16px;
   }
   .products .development_card .left_icon {
@@ -2347,7 +2392,10 @@ ul {
     margin-bottom: 32px;
   }
   .products .development_card a {
+    position: static;
     font-size: 16px;
+    left: 16px;
+    bottom: 16px;
   }
   .question_form {
     padding: 51px 0 48px;
@@ -2435,6 +2483,18 @@ ul {
     position: absolute;
     bottom: 0;
     right: 0;
+  }
+  .product_hero .specialty:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  .product_hero .specialty:hover .specialty_title {
+    color: #fff;
+  }
+  .product_hero .specialty:hover .specialty_arrow {
+    display: none;
+  }
+  .product_hero .specialty:hover .specialty_img_block {
+    display: none;
   }
   .who_benefit {
     padding: 80px 0;
