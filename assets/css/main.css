@@ -1864,7 +1864,7 @@ ul {
   }
   .header .header_menus .header_right {
     position: absolute;
-    bottom: 24px;
+    bottom: 50px;
     left: 24px;
   }
   .header .header_menus .login_btn {
