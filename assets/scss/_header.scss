@@ -20,6 +20,7 @@
         li {
             a {
                 color: $black;
+                opacity: .8;
                 font-family: "Inter";
                 font-size: 18px;
                 font-style: normal;
@@ -29,6 +30,7 @@
                 transition: all .3s ease;
                 &:hover{
                     color: $dark_grey;
+                    
                 }
             }
         }

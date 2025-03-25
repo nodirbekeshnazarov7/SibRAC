@@ -278,6 +278,7 @@ ul {
 }
 .header .header_menus li a {
   color: #000;
+  opacity: 0.8;
   font-family: "Inter";
   font-size: 18px;
   font-style: normal;
